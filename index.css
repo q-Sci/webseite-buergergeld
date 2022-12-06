@@ -13,3 +13,12 @@ body {
   margin: 0 auto;
   margin-bottom: 1em;
 }
+.logo {
+  position: absolute;
+  top: 20px;
+  right: 2.5%;
+  margin: 1em;
+  width: 25%;
+  height: auto;
+
+}
