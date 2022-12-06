@@ -24,13 +24,20 @@ main p, main ul {
 .headings {
   font-weight: 400;
   font-size: 2.75em;
+  position: relative;
+  left: 2vw;
+}
+.names {
+  position: relative;
+  bottom: 5vh;
 }
 .divider {
   border-bottom: 3px solid #000;
   border-radius: 2px;
   width: 95%;
   margin: 0 auto;
-  margin-bottom: 1em;
+  margin-top: -4em;
+  margin-bottom: 4em; 
 }
 .logo {
   position: absolute;
