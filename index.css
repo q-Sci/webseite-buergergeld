@@ -49,6 +49,7 @@ nav a.über {
 }
 
 main {
+  min-height: calc(100vh - 390px);
   margin: 80px auto;
 }
 
@@ -149,7 +150,9 @@ main ul {
 }
 
 footer {
-  margin-top: 160px;
+  position: relative;
+  width: 100%;
+  margin-top: auto;
   border-top: 1px solid #000000;
 }
 footer ul {
