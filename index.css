@@ -39,7 +39,11 @@ nav a {
 nav a {
   margin-right: 40px;
 }
-nav a:hover {
+nav a.selected {
+  margin-bottom: -5px;
+  border-bottom: 5px solid #860d2180;
+}
+nav a:hover, nav a.selected:hover {
   margin-bottom: -5px;
   border-bottom: 5px solid #860d21;
 }
