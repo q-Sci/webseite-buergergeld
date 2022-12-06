@@ -1,0 +1,12 @@
+.headings {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 2.75em;
+}
+.divider {
+    border-bottom: 3px solid #000;
+    border-radius: 2px;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
