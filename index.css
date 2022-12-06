@@ -11,7 +11,7 @@ main {
 main h1 {
   font-size: 3em;
   font-weight: bold;
-  margin: auto -90px;
+  margin: auto -80px;
 }
 
 main h2 {
@@ -52,11 +52,11 @@ main ul {
   top: 20px;
   right: 2.5%;
   margin: 1em;
-  width: 25%;
+  width: 400px;
   height: auto;
 }
 .info {
-  margin: auto -90px;
+  margin: auto -80px;
   color: #4B4B4B;
 }
 
