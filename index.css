@@ -7,6 +7,13 @@ main {
   max-width: 800px;
   margin: 80px auto;
 }
+
+main h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: auto -90px;
+}
+
 main h2 {
   font-size: 2rem;
   margin-top: 42px;
@@ -46,5 +53,8 @@ main p, main ul {
   margin: 1em;
   width: 25%;
   height: auto;
-
+}
+.info {
+  margin: auto -90px;
+  color: #4B4B4B;
 }
