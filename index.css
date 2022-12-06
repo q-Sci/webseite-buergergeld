@@ -2,6 +2,12 @@ body {
   font-family: sans-serif;
 }
 
+main {
+  width: calc(100% - 24px);
+  max-width: 800px;
+  margin: 80px auto;
+}
+
 .headings {
   font-weight: 400;
   font-size: 2.75em;
