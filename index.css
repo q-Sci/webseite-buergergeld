@@ -59,6 +59,22 @@ main ul {
   margin: auto -80px;
   color: #4B4B4B;
 }
+.overview-graphic {
+  position: absolute;
+  top: 50vh;
+  right: 20vw;
+  width: 25%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+}
+.text1 {
+  position: relative;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
 
 footer {
   width: calc(100% - 80px);
