@@ -7,6 +7,19 @@ main {
   max-width: 800px;
   margin: 80px auto;
 }
+main h2 {
+  font-size: 2rem;
+  margin-top: 42px;
+}
+main h3 {
+  font-size: 1.6rem;
+  margin-top: 36px;
+  margin-bottom: 0;
+}
+main p, main ul {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
 
 .headings {
   font-weight: 400;
