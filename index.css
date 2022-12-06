@@ -69,7 +69,23 @@ main ul {
   padding: 0;
   border-radius: 10px;
 }
+.merz-graphic {
+  position: absolute;
+  top: 260vh;
+  right: 20vw;
+  width: 25%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+}
 .text1 {
+  position: relative;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+.text2 {
   position: relative;
   width: 50%;
   margin: 0;
