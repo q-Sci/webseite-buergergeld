@@ -42,7 +42,8 @@ nav a {
 nav a.selected {
   border-bottom: 5px solid #860d2180;
 }
-nav a:hover, nav a.selected:hover {
+nav a:hover,
+nav a.selected:hover {
   border-bottom: 5px solid #860d21;
 }
 nav a.über {
@@ -80,6 +81,15 @@ main > img {
   object-fit: cover;
 }
 
+main p,
+main ul {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+main a {
+  color: #860d21;
+}
+
 main section {
   max-width: 860px;
   margin-inline: auto;
@@ -94,10 +104,39 @@ main section h3 {
   margin-top: 40px;
   margin-bottom: 0;
 }
-main p,
-main ul {
+main section details {
   font-size: 1.2rem;
   line-height: 1.5;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+main section details:first-of-type {
+  margin-top: 32px;
+  border-top: 2px solid #000000;
+}
+main section details:last-of-type {
+  margin-bottom: 32px;
+  border-bottom: 2px solid #000000;
+}
+main section summary {
+  font-size: 1.6rem;
+  font-weight: 600;
+  list-style-type: none;
+  cursor: pointer;
+}
+main section details > summary:after {
+  content: '>';
+  display: inline-block;
+  font-weight: 400;
+  font-family: monospace;
+  margin-left: 12px;
+  transform: rotate(90deg);
+}
+main section details[open] > summary:after {
+  content: '<';
+  margin-bottom: 8px;
 }
 main section div.flex {
   display: flex;
@@ -106,7 +145,14 @@ main section div.flex {
 main section div.flex > * {
   width: 50%;
 }
-main section div.flex > img {
+main section div.flex > figure {
+  color: #4b4b4b;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-inline: 0;
+}
+main section div.flex > figure > img {
+  width: 100%;
   object-fit: contain;
 }
 
@@ -137,7 +183,6 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
 
 @media (max-width: 768px) {
   body {
@@ -196,16 +241,25 @@ footer a:hover {
     margin-bottom: 20px;
   }
 
+  main section p,
+  main section ul {
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+
   main section h2 {
     font-size: 2rem;
   }
   main section h3 {
     font-size: 1.2rem;
   }
-  main section p,
-  main section ul {
-  font-size: 1rem;
-  line-height: 1.25;
+
+  main section details {
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+  main section summary {
+    font-size: 1.2rem;
   }
 
   main section div.flex > img {
