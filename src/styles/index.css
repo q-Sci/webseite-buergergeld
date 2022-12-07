@@ -10,7 +10,6 @@ header {
 }
 header p {
   color: #4b4b4b;
-  font-weight: 400;
   margin: 0 0 -12px -2px;
 }
 header h1 {
@@ -33,18 +32,17 @@ nav a {
   font-weight: 600;
   text-decoration: none;
   padding-bottom: 4px;
-  margin-bottom: 4px;
+  margin-bottom: -1px;
+  border-bottom: 5px solid #00000000;
   cursor: pointer;
 }
 nav a {
   margin-right: 40px;
 }
 nav a.selected {
-  margin-bottom: -5px;
   border-bottom: 5px solid #860d2180;
 }
 nav a:hover, nav a.selected:hover {
-  margin-bottom: -5px;
   border-bottom: 5px solid #860d21;
 }
 nav a.über {
@@ -80,7 +78,6 @@ main > img {
   height: 600px;
   margin-bottom: 100px;
   object-fit: cover;
-  filter: saturate(0);
 }
 
 main section {
@@ -92,7 +89,7 @@ main section h2 {
   font-size: 2.4rem;
   margin-top: 48px;
 }
-main h3 {
+main section h3 {
   font-size: 1.6rem;
   margin-top: 40px;
   margin-bottom: 0;
@@ -102,14 +99,14 @@ main ul {
   font-size: 1.2rem;
   line-height: 1.5;
 }
-main div.flex {
+main section div.flex {
   display: flex;
   gap: 40px;
 }
-main div.flex > * {
+main section div.flex > * {
   width: 50%;
 }
-main div.flex > img {
+main section div.flex > img {
   object-fit: contain;
 }
 
@@ -139,4 +136,87 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    width: calc(100% - 40px);
+  }
+
+  nav a {
+    font-size: 1.2rem;
+    margin-top: 12px;
+  }
+  nav a.über {
+    position: static;
+    right: unset;
+  }
+
+  main > img {
+    height: 300px;
+  }
+
+  main section div.flex {
+    flex-direction: column;
+  }
+  main section div.flex > * {
+    width: unset;
+  }
+  main section div.flex > img {
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    padding-top: 12px;
+  }
+  header p {
+    font-size: 0.8rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    padding-top: 0;
+  }
+
+  main > h1 {
+    font-size: 2.4rem;
+    margin-top: 60px;
+    margin-bottom: 48px;
+  }
+  main > p {
+    font-size: 1.1rem;
+  }
+  main > img {
+    margin-bottom: 20px;
+  }
+
+  main section h2 {
+    font-size: 2rem;
+  }
+  main section h3 {
+    font-size: 1.2rem;
+  }
+  main section p,
+  main section ul {
+  font-size: 1rem;
+  line-height: 1.25;
+  }
+
+  main section div.flex > img {
+    width: 100%;
+  }
+
+  footer ul {
+    display: block;
+    line-height: 1.25;
+  }
+  footer ul li {
+    font-size: 0.8rem;
+  }
 }
